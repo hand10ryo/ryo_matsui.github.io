@@ -1,1 +1,91 @@
-準備中
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Portfolio of Ryo Matsui</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="image avatar"><img src="images/photo.png" alt="" /></a>
+            <h1><strong>松井 諒生</strong></h1>
+            <h1><strong>Ryo Matsui</strong></h1>
+            Graduate Student at Tokyo Tech<br />
+            Industrial Engineering and Economics<br />
+            Nakata Lab. M1<br />
+            matsui.r.ae at m.titech.ac.jp<br />
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h2 id="-所属">◆ SMN 株式会社 データサイエンスインターン 2019.5~</h2>
+                <h3 id="プロダクトへデプロイされた成果">【プロダクトへデプロイされた成果】</h3>
+                <h4 id="顧客比率の偏りを考慮した学習">・<u>顧客比率の偏りを考慮した学習</u></h4>
+                <p>VALIS-Cockpit
+                    では分析対象となる顧客層と比較対象となる顧客層を設定し、分析対象に特有な興味をトピックとして抽出することができる。しかし、分析対象には商品購入などに至った顧客を設定する場合が多く、その人数は比較対象に比べて極端に少なくなる。このように、<strong>顧客数の比に偏りがある場合、分析対象の顧客の興味をトピックとして抽出できないという問題があった。</strong>これを受け、損失関数に顧客数の比を反映させることでこの偏りの影響を是正する手法を考案した。<strong>これによって、分析対象の顧客が興味を持つと考えられるトピックが抽出されるようになった。</strong>
+                </p>
+                <h4 id="メモリエラー回避">・<u>メモリエラー回避</u></h4>
+                <p>修正前のアルゴリズムは、メモリ使用量の問題で大規模な文書データを扱うことができず、多様なトピックを抽出できなかった。そこで、行列演算における省メモリ化の修正を行い、10万文書 ×
+                    10万単語以上でのトピック抽出を可能にした。</p>
+                <h3 id="プロダクトへのデプロイが検討されている成果">【プロダクトへのデプロイが検討されている成果】</h3>
+                <h4 id="トピック数の最適化">・<u>トピック数の最適化</u></h4>
+                <p>VALIS-Cockpit
+                    では顧客の興味が複数の「トピック」として可視化されるが、<strong>従来のアルゴリズムでは類似したトピックが頻出し、顧客の志向が考察しにくいという問題が報告されていた。</strong>この問題に対して、ハイパーパラメータとして設定されていたトピック数が抽出すべきトピック数に対して過剰になってしまい、顧客の興味の些末な差異まで抽出してしまっていることに起因すると考えた。この問題はオーバーフィットしないようにトピック数を定める問題なので情報量基準で解決できる。そこで、VALIS-Cockpit
+                    のアルゴリズムに適合するような情報量規準を設計し、トピック数を最適化する手法を考案した。<strong>その結果、適切な数のトピックを与えることができ、マーケターの考察の負担を軽減することができた。</strong>
+                </p>
+                <h4 id="最適化アルゴリズムの高速化">・<u>最適化アルゴリズムの高速化</u></h4>
+                <p>VALIS-Cockpit では、損失関数の最適化アルゴリズムとして Adam
+                    を用いることを検討していた。しかし既存実装では計算速度が遅く、実用的でなかったためこのアルゴリズムの高速化を行った。具体的には、スパース行列を scipy.sparse
+                    のライブラリを用いて処理し、線形代数演算を scipy.blas.linalg を用いて計算させることで、計算時間を約50%削減することに成功した。</p>
+
+                <div style="text-align: right">
+                    <a href="./index.html" class="button"><span style="color: #999999;">ホームへ</span></a>
+                </div>
+        </section>
+
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://twitter.com/YCGDuRQ3Eva6v2I" class="icon brands fa-twitter"><span
+                                class="label">Twitter</span></a></li>
+                    <li><a href="https://github.com/hand10ryo" class="icon brands fa-github"><span
+                                class="label">Github</span></a></li>
+                    <li><a href="https://www.slideshare.net/MatsuiRyo/presentations"
+                            class="icon brands fa-slideshare"><span class="label">slideshare</span></a></li>
+
+                    <li><a href="https://qiita.com/hand10ryo" class="icon brands icon-qiita"><span
+                                class="label">Qiita</span></a></li>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
